@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import MarvelApp
 
 class MarvelAppTests: XCTestCase {
 
