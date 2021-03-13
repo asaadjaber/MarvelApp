@@ -53,6 +53,7 @@
 		4ED410BE25FD252C00FEBAA6 /* MarvelAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAppUITests.swift; sourceTree = "<group>"; };
 		4ED410D125FD332600FEBAA6 /* MarvelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTests.swift; sourceTree = "<group>"; };
 		4ED410DF25FD342100FEBAA6 /* CharactersRequestAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharactersRequestAPITests.swift; path = MarvelAppTests/CharactersRequestAPITests.swift; sourceTree = SOURCE_ROOT; };
+		4ED410E725FD3BB100FEBAA6 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 				4ED410B425FD246200FEBAA6 /* Helper */,
 				4ED4102A25FD211B00FEBAA6 /* Assets.xcassets */,
 				4ED4102F25FD211B00FEBAA6 /* Info.plist */,
+				4ED410E725FD3BB100FEBAA6 /* TestPlan.xctestplan */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";

@@ -19,4 +19,31 @@ class CharactersRequestAPITests: XCTestCase {
         XCTAssertEqual(url.host, "gateway.marvel.com")
         XCTAssertEqual(url.query, "apikey=\(CharacterRequestAPI.publicKey)&ts=\(timeStamp)&hash=\(hash)&orderBy=name")
     }
+    
+    func testParseResponse() throws {
+        let jsonData = """
+        {"data":
+            {"results":
+                [
+                    {
+                    "name": "someName",
+                    "description": "someDescription",
+                    "thumbnail":
+                        {
+                        "path": "somePath",
+                         "extension": "someExtension"
+                        }
+                    }
+                ]
+            }
+        }
+        """.data(using: .utf8)!
+        
+        let result = try charactersAPI.parseResponse(fromJSON: jsonData)
+        
+        XCTAssertEqual(result.first!.name, "someName")
+        XCTAssertEqual(result.first!.description, "someDescription")
+        XCTAssertEqual(result.first!.thumbnail.path, "somePath")
+        XCTAssertEqual(result.first!.thumbnail.imageExtension, "someExtension")
+    }
 }
