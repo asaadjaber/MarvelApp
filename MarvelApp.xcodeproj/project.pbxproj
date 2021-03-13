@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E130EF825FD692600DF0056 /* APIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E130EF725FD692600DF0056 /* APIInterface.swift */; };
+		4E130EFE25FD694300DF0056 /* CharactersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E130EFD25FD694300DF0056 /* CharactersAPI.swift */; };
+		4E130F1125FD699300DF0056 /* MarvelCharactersAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E130F1025FD699300DF0056 /* MarvelCharactersAPITests.swift */; };
 		4E5A385D25FD5B930044C9CB /* APIRequestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5A385C25FD5B930044C9CB /* APIRequestLoader.swift */; };
 		4E5A386225FD5BF80044C9CB /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5A386125FD5BF80044C9CB /* APIProtocol.swift */; };
 		4E5A387325FD5F210044C9CB /* APIRequestLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5A387225FD5F210044C9CB /* APIRequestLoaderTests.swift */; };
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E130EF025FD68A700DF0056 /* MarvelApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MarvelApp.xctestplan; sourceTree = "<group>"; };
+		4E130EF725FD692600DF0056 /* APIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
+		4E130EFD25FD694300DF0056 /* CharactersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersAPI.swift; sourceTree = "<group>"; };
+		4E130F1025FD699300DF0056 /* MarvelCharactersAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharactersAPITests.swift; sourceTree = "<group>"; };
 		4E5A385C25FD5B930044C9CB /* APIRequestLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestLoader.swift; sourceTree = "<group>"; };
 		4E5A386125FD5BF80044C9CB /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		4E5A387225FD5F210044C9CB /* APIRequestLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestLoaderTests.swift; sourceTree = "<group>"; };
@@ -58,7 +65,6 @@
 		4ED410A825FD245C00FEBAA6 /* URLAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLAuth.swift; sourceTree = "<group>"; };
 		4ED410BE25FD252C00FEBAA6 /* MarvelAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAppUITests.swift; sourceTree = "<group>"; };
 		4ED410DF25FD342100FEBAA6 /* CharactersRequestAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharactersRequestAPITests.swift; path = MarvelAppTests/CharactersRequestAPITests.swift; sourceTree = SOURCE_ROOT; };
-		4ED410E725FD3BB100FEBAA6 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		4ED747C025FD610700BBD0FD /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E130EFC25FD692C00DF0056 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4E130EF725FD692600DF0056 /* APIInterface.swift */,
+				4E130EFD25FD694300DF0056 /* CharactersAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		4ED4101525FD211800FEBAA6 = {
 			isa = PBXGroup;
 			children = (
@@ -113,11 +128,12 @@
 				4ED4102125FD211800FEBAA6 /* AppDelegate.swift */,
 				4ED4102525FD211800FEBAA6 /* ViewController.swift */,
 				4ED4107725FD229800FEBAA6 /* Model */,
+				4E130EFC25FD692C00DF0056 /* API */,
 				4ED4106825FD21AA00FEBAA6 /* Service */,
 				4ED410B425FD246200FEBAA6 /* Helper */,
 				4ED4102A25FD211B00FEBAA6 /* Assets.xcassets */,
 				4ED4102F25FD211B00FEBAA6 /* Info.plist */,
-				4ED410E725FD3BB100FEBAA6 /* TestPlan.xctestplan */,
+				4E130EF025FD68A700DF0056 /* MarvelApp.xctestplan */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";
@@ -128,6 +144,7 @@
 				4ED410DF25FD342100FEBAA6 /* CharactersRequestAPITests.swift */,
 				4ED747C025FD610700BBD0FD /* MockURLProtocol.swift */,
 				4E5A387225FD5F210044C9CB /* APIRequestLoaderTests.swift */,
+				4E130F1025FD699300DF0056 /* MarvelCharactersAPITests.swift */,
 				4ED4103A25FD211B00FEBAA6 /* Info.plist */,
 			);
 			path = MarvelAppTests;
@@ -299,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E130EFE25FD694300DF0056 /* CharactersAPI.swift in Sources */,
 				4ED4102625FD211800FEBAA6 /* ViewController.swift in Sources */,
 				4ED410AD25FD245F00FEBAA6 /* URLAuth.swift in Sources */,
 				4ED4108125FD22A700FEBAA6 /* Wrapper.swift in Sources */,
@@ -306,6 +324,7 @@
 				4ED4107025FD225000FEBAA6 /* CharacterRequestAPI.swift in Sources */,
 				4E5A386225FD5BF80044C9CB /* APIProtocol.swift in Sources */,
 				4E5A385D25FD5B930044C9CB /* APIRequestLoader.swift in Sources */,
+				4E130EF825FD692600DF0056 /* APIInterface.swift in Sources */,
 				4ED4107925FD22A100FEBAA6 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED747C125FD610700BBD0FD /* MockURLProtocol.swift in Sources */,
+				4E130F1125FD699300DF0056 /* MarvelCharactersAPITests.swift in Sources */,
 				4ED410E025FD342100FEBAA6 /* CharactersRequestAPITests.swift in Sources */,
 				4E5A387325FD5F210044C9CB /* APIRequestLoaderTests.swift in Sources */,
 			);

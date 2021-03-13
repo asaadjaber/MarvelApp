@@ -55,6 +55,6 @@ class APIRequestLoaderTests: XCTestCase {
             expectation.fulfill()
         }
         
-        wait(for: [expectation], timeout: 3)
+        wait(for: [expectation], timeout: 5)
     }
 }
