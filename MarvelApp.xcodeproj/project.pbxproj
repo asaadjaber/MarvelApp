@@ -16,6 +16,7 @@
 		4ED410AD25FD245F00FEBAA6 /* URLAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED410A825FD245C00FEBAA6 /* URLAuth.swift */; };
 		4ED410BF25FD252C00FEBAA6 /* MarvelAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED410BE25FD252C00FEBAA6 /* MarvelAppUITests.swift */; };
 		4ED410D225FD332600FEBAA6 /* MarvelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED410D125FD332600FEBAA6 /* MarvelAppTests.swift */; };
+		4ED410E025FD342100FEBAA6 /* CharactersRequestAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED410DF25FD342100FEBAA6 /* CharactersRequestAPITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4ED410A825FD245C00FEBAA6 /* URLAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLAuth.swift; sourceTree = "<group>"; };
 		4ED410BE25FD252C00FEBAA6 /* MarvelAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelAppUITests.swift; sourceTree = "<group>"; };
 		4ED410D125FD332600FEBAA6 /* MarvelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTests.swift; sourceTree = "<group>"; };
+		4ED410DF25FD342100FEBAA6 /* CharactersRequestAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharactersRequestAPITests.swift; path = MarvelAppTests/CharactersRequestAPITests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		4ED4103725FD211B00FEBAA6 /* MarvelAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				4ED410DF25FD342100FEBAA6 /* CharactersRequestAPITests.swift */,
 				4ED410D125FD332600FEBAA6 /* MarvelAppTests.swift */,
 				4ED4103A25FD211B00FEBAA6 /* Info.plist */,
 			);
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED410E025FD342100FEBAA6 /* CharactersRequestAPITests.swift in Sources */,
 				4ED410D225FD332600FEBAA6 /* MarvelAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
