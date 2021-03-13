@@ -11,7 +11,7 @@ enum Endpoint: String {
     case marvelCharacters = "/v1/public/characters"
 }
 
-struct CharacterRequestAPI {
+struct CharacterRequestAPI: APIProtocol {
     static let baseURLString = "https://gateway.marvel.com"
     static let publicKey = "91be37413fc85a2cc78a44cc20cceef9"
     static let privateKey = "fdfa044e4b83023b1705dec5cadaae08ab2bb9ed"
