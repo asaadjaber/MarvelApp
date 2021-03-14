@@ -11,6 +11,22 @@ struct MarvelCharacter: Decodable {
     let name: String
     let description: String
     let thumbnail: CharacterImage
+    
+    var identifier = UUID()
+    
+    private enum CodingKeys: CodingKey {
+        case name, description, thumbnail
+    }
+}
+
+extension MarvelCharacter: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+    }
+    
+    static func == (lhs: MarvelCharacter, rhs: MarvelCharacter) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
 }
 
 struct CharacterImage: Decodable {
