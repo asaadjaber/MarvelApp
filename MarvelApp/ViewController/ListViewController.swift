@@ -10,7 +10,10 @@ import UIKit
 class ComposableGridViewController: UIViewController {
     var collectionView: UICollectionView! = nil
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
+    var listDataSource: ListDataSource!
+    var dataSource: UICollectionViewDiffableDataSource<Section, MarvelCharacter>! = nil
+            
+    var cellRegistration: UICollectionView.CellRegistration<UICollectionViewCell, MarvelCharacter>!
         
     let layout: UICollectionViewLayout = {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(76))
@@ -34,28 +37,17 @@ class ComposableGridViewController: UIViewController {
         
         view.addSubview(collectionView)
         
-        configureDataSource()
+        registerCellThenStandbyForConfigure()
                 
-        applySnapshot()
+        listDataSource = ListDataSource(collectionView: collectionView, cellRegistration: cellRegistration)
+        dataSource = listDataSource.dataSource
+        
+        listDataSource.setDataSourceModel()
     }
     
-    func configureDataSource() {
-        let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, Int> { (cell, indexPath, model) in
+    private func registerCellThenStandbyForConfigure() {
+        cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, MarvelCharacter> { (cell, indexPath, model) in
             cell.backgroundColor = UIColor.magenta
         }
-        
-        dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, identifier: Int) -> UICollectionViewCell? in
-            let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
-            
-            return cell
-        }
-    }
-    
-    private func applySnapshot() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
-        snapshot.appendSections([.main])
-        snapshot.appendItems(Array(0..<20))
-        
-        dataSource.apply(snapshot, animatingDifferences: false)
     }
 }
