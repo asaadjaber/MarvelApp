@@ -5,8 +5,7 @@
 //  Created by Asaad Jaber on 3/14/21.
 //
 
-import Foundation
-
-enum Section {
-    case main
+enum Section: Int {
+    case orthogonal, main
 }
+

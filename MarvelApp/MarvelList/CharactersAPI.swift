@@ -2,7 +2,7 @@
 //  CharactersAPI.swift
 //  MarvelApp
 //
-//  Created by Asaad Jaber on 3/13/21.
+//  Created by Asaad Jaber on 3/15/21.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ protocol MarvelCharactersAPIProtocol {
 }
 
 struct MarvelCharactersAPI: MarvelCharactersAPIProtocol {
-    let requestLoader: APIRequestLoader<CharacterRequestAPI>
+    private let requestLoader: APIRequestLoader<CharacterRequestAPI>
     
     init(requestLoader: APIRequestLoader<CharacterRequestAPI>) {
         self.requestLoader = requestLoader

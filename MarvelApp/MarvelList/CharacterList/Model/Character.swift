@@ -6,14 +6,17 @@
 //
 
 import Foundation
+import Combine
 
-struct MarvelCharacter: Decodable {
+struct MarvelCharacter: Codable {
     let name: String
     let description: String
     let thumbnail: CharacterImage
     
-    var identifier = UUID()
+    var isAdded: CurrentValueSubject<Bool, Never> = .init(false)
     
+    let identifier: UUID = UUID()
+
     private enum CodingKeys: CodingKey {
         case name, description, thumbnail
     }
@@ -29,7 +32,7 @@ extension MarvelCharacter: Hashable {
     }
 }
 
-struct CharacterImage: Decodable {
+struct CharacterImage: Codable {
     let path: String
     let imageExtension: String
     

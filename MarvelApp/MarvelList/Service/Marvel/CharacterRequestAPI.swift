@@ -7,6 +7,14 @@
 
 import Foundation
 
+protocol APIProtocol {
+    associatedtype ResponseDataType
+    associatedtype RequestData
+    
+    func getURL(with _: RequestData) -> URL
+    func parseResponse(fromJSON data: Data) throws -> ResponseDataType
+}
+
 enum Endpoint: String {
     case marvelCharacters = "/v1/public/characters"
 }

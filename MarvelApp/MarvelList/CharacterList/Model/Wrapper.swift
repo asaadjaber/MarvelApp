@@ -11,6 +11,8 @@ enum MarvelObject {
     case MarvelCharacter
 }
 
+// Note: Wrapper and Container keys are intentionally ommitted. Add desired keys as needed.
+
 struct Wrapper: Decodable {
     let data: Container
 }
