@@ -30,6 +30,7 @@
 		4EB8C1ED260020F100F782AC /* CharactersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8C1EC260020F100F782AC /* CharactersAPI.swift */; };
 		4EB8C1F5260020F800F782AC /* ImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8C1F4260020F800F782AC /* ImageAPI.swift */; };
 		4EB8C1FA2600210100F782AC /* ImageRequestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8C1F92600210100F782AC /* ImageRequestLoader.swift */; };
+		4EB8C2152600243F00F782AC /* ListCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8C2142600243F00F782AC /* ListCellViewModelTests.swift */; };
 		4ED4102225FD211800FEBAA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4102125FD211800FEBAA6 /* AppDelegate.swift */; };
 		4ED4102B25FD211B00FEBAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4102A25FD211B00FEBAA6 /* Assets.xcassets */; };
 		4ED4107025FD225000FEBAA6 /* CharacterRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4106F25FD225000FEBAA6 /* CharacterRequestAPI.swift */; };
@@ -85,6 +86,7 @@
 		4EB8C1EC260020F100F782AC /* CharactersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersAPI.swift; sourceTree = "<group>"; };
 		4EB8C1F4260020F800F782AC /* ImageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPI.swift; sourceTree = "<group>"; };
 		4EB8C1F92600210100F782AC /* ImageRequestLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequestLoader.swift; sourceTree = "<group>"; };
+		4EB8C2142600243F00F782AC /* ListCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModelTests.swift; sourceTree = "<group>"; };
 		4ED4101E25FD211800FEBAA6 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED4102125FD211800FEBAA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED4102A25FD211B00FEBAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 				4E5A387225FD5F210044C9CB /* APIRequestLoaderTests.swift */,
 				4E130F1025FD699300DF0056 /* MarvelCharactersAPITests.swift */,
 				4ED747C025FD610700BBD0FD /* MockURLProtocol.swift */,
+				4EB8C2142600243F00F782AC /* ListCellViewModelTests.swift */,
 				4ED4103A25FD211B00FEBAA6 /* Info.plist */,
 			);
 			path = MarvelAppTests;
@@ -511,6 +514,7 @@
 				4ED747C125FD610700BBD0FD /* MockURLProtocol.swift in Sources */,
 				4E130F1125FD699300DF0056 /* MarvelCharactersAPITests.swift in Sources */,
 				4ED410E025FD342100FEBAA6 /* CharactersRequestAPITests.swift in Sources */,
+				4EB8C2152600243F00F782AC /* ListCellViewModelTests.swift in Sources */,
 				4E5A387325FD5F210044C9CB /* APIRequestLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
